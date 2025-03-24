@@ -1,0 +1,13 @@
+class NoteModel {
+  int id;
+  String note;
+
+  NoteModel({required this.id, required this.note});
+
+  factory NoteModel.fromJson(Map<String, dynamic> json) {
+    return NoteModel(
+      id: json['id'],
+      note: json['Notes'],
+    );
+  }
+}
